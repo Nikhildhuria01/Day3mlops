@@ -1,4 +1,8 @@
-from day3pipeline.data_loader import load_data
+import sys
+import os
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+from data_loader import load_data
 
 
 def test_load_data():
